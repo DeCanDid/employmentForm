@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="./bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./icofont/icofont.min.css">
+    <!-- <script src="./bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/js/bootstrap.bundle.js"></script> -->
+</head>
+
+<style>
+    body{
+        /* background-color: bisque; */
+        background-image: url(./images/leavybg.JPG);
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        background-position: center;
+    }
+    main{
+        width: 50%;
+    }
+
+    .alert{
+        width: 100%;
+        background-color: rgba(0, 128, 0, 0.692);
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: none;
+    }
+
+    @media (max-width:700px) {
+        main{
+            width: 75%;
+        }
+    }
+</style>
+<body>
+
+    <main class="mx-auto my-5 rounded-2 p-3 bg-white shadow w-50">
+        <div class="text-center mx-auto">
+            <img class="w-50 my-4" src="./images/greentech1.JPG" alt="">
+        </div>
+        <h4 class="text-center px-2 text-success ">EMPLOYMENT / JOB APPLICATION</h4>
+
+        <form action="" class="row g-3 my-2" id="bioForm">
+            <!-- <form action="" class="row g-3 my-2" > -->
+                <div class="alert">Your data has been submitted successfuly!</div>
+            
+                <h4 class="bg-success py-2 px-2 text-white">Personal Information</h4>
+                <div class="col-md-4 ">
+                    <label for="inputFirstName" class="form-label"><b>First name</b></label>
+                    <input type="text" class="form-control" id="inputFirstName" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputMiddleName" class="form-label"><b>Middle name</b></label>
+                    <input type="text" class="form-control" id="inputMiddleName">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputLastName" class="form-label"><b>Last name</b></label>
+                    <input type="text" class="form-control" id="inputLastName">
+                </div>
+              
+            
+                <div class="col-md-6">
+                    <label for="inputEmail" class="form-label"><b>Email</b></label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="davidlincoln@gmail.com">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPhoneNumber" class="form-label"><b>Phone</b></label>
+                    <input type="number" class="form-control" id="inputPhoneNumber" placeholder="">
+                </div>
+            
+              <div class="col-12">
+                <label for="inputAddress" class="form-label"><b>Address</b></label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Apartment, studio, or floor">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label"><b>State / City</b></label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+            
+              <div class="col-md-6">
+                <label for="inputZip" class="form-label"><b>Zip</b></label>
+                <input type="number" class="form-control" id="inputZip">
+              </div>
+            <!-- </form> -->
+            
+            <!-- <form class="row g-3 mt-4"> -->
+                <h4 class="bg-success py-2 px-2 text-white">Education</h4>
+            <div class="col-md-6">
+                <label for="inputHighSch" class="form-label"><b>High School</b></label>
+                <input type="text" class="form-control" id="inputHighSch">
+            </div>
+            <div class="col-md-6">
+                <label for="StateORCity" class="form-label"><b>City/State</b></label>
+                <input type="text" class="form-control" id="StateORCity">
+            </div>
+            <div class="col-md-6">
+                <label for="highSchF" class="form-label"><b>From:</b></label>
+                <input type="number" class="form-control" id="highSchF">
+            </div>
+            <div class="col-md-6">
+                <label for="highSchT" class="form-label"><b>To:</b></label>
+                <input type="number" class="form-control" id="highSchT">
+            </div>
+            <div class="col-md-6">
+                <label for="GraduateCollege" class="form-label"><b>Graduate:</b>&nbsp;
+                    <small>(state Yes/No)</small></label>
+                    <input type="text" class="form-control" id="GraduateCollege">
+            </div>
+            <div class="col-md-6">
+                <label for="Qualification" class="form-label"><b>Qualification</b></label>
+                <input type="text" class="form-control" id="Qualification">
+            </div>
+            
+            
+            
+            <div class="col-md-6">
+                <label for="institution" class="form-label"><b>College/University</b></label>
+                <input type="text" class="form-control" id="institution">
+            </div>
+            <div class="col-md-6">
+                <label for="institutionState" class="form-label"><b>City/State</b></label>
+                <input type="text" class="form-control" id="institutionState">
+            </div>
+            <div class="col-md-6">
+                <label for="from" class="form-label"><b>From:</b></label>
+                <input type="number" class="form-control" id="from">
+            </div>
+            <div class="col-md-6">
+                <label for="to" class="form-label"><b>To:</b></label>
+                <input type="number" class="form-control" id="to">
+            </div>
+            <div class="col-md-6">
+                <label for="GraduateUni" class="form-label"><b>Graduate:</b>&nbsp;
+                    <small>(state Yes/No)</small></label>
+                    <input type="text" class="form-control" id="GraduateUni" >
+            </div>
+              
+            </div>
+            <div class="col-md-6">
+                <label for="collegeORuniQualification" class="form-label"><b>Qualification</b></label>
+                <input type="text" class="form-control" id="collegeORuniQualification">
+            </div>
+            
+            
+            
+            <!-- </form> -->
+            <div class="col-6 mx-auto my-3">
+                <button type="submit" class="btn btn-success w-100">Submit</button>
+            </div>
+        </form>
+
+
+
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./form.js"></script>
+
+</body>
+</html>
+

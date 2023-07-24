@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee requirements</title>
+    <link rel="stylesheet" href="./bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./icofont/icofont.min.css">
+    <script src="./bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/js/bootstrap.bundle.js"></script>
+
+</head>
+
+<style>
+    body{
+        /* background-color: bisque; */
+        background-image: url(./images/leavybg.JPG);
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        background-position: center;
+    }
+    main{
+        width: 50%;
+    }
+
+    main img{
+        width: 300px;
+    }
+
+
+    @media (max-width:700px) {
+        main{
+            width: 80%;
+        }
+    }
+</style>
+<body>
+    <main class="mx-auto my-5 rounded-2 p-3 bg-white shadow">
+        <div class="text-center mx-auto">
+            <img class="w-50 h-25" src="./images/logo.JPG" alt="">
+        </div>
+
+        <form for="submit" class="row g-3 my-2" id="employeeForm">
+            <!-- <div class="alert">Your data has been submitted successfuly!</div> -->
+            <h4 class="bg-success py-2 px-2 text-white">Employee Requirements</h4>
+            <div class="col-md-6 shadow px-2 py-2">
+                <label for="UScitizen" class="form-label"><b>Are you a US citizen?</b></label><br>
+                <small>(State Yes/No)</small>
+                <br>
+                    <input type="text" class="form-control w-50" id="UScitizen">
+            </div>
+
+            <div class="col-md-6 shadow px-2 py-2">
+                <label for="workPermit" class="form-label"><b>(If no, are you allowed to work legally in the US ?)</b></label><br>
+                <small>(State Yes/No)</small>
+                <br>
+                    <input type="text" class="form-control w-50" id="workPermit">
+            </div>          
+        
+            <div class="col-md-6 shadow px-2 py-2">
+                <label for="Experience" class="form-label"><b>Do you have any experience as a remote worker ?</b></label><br>
+                <small>(State Yes/No)</small>
+                <br>
+                    <input type="text" class="form-control w-50" id="Experience">
+            </div> 
+
+            <div class="col-md-6 shadow px-2 py-2">
+                <label for="Availability" class="form-label"><b>Will you always be reachable during work hours ?</b></label><br>
+                <small>(State Yes/No)</small>
+                <br>
+                    <input type="text" class="form-control w-50" id="Availability">
+            </div>
+
+            <div class="col-md-6 shadow px-2 py-2">
+                <label for="RecentJob" class="form-label"><b>Do you have any job at the moment ?</b></label><br>
+                <small>(State Yes/No)</small>
+                <br>
+                    <input type="text" class="form-control w-50" id="RecentJob">
+            </div>
+
+            <div class="col-md-6 shadow px-2 py-2">
+                <label for="English" class="form-label"><b>How well do you speak and understand English ?</b></label><br>
+                <small>(State Slightly/ Fair/ Good/ Pretty good)</small>
+                <br>
+                    <input   type="text" class="form-control w-50" id="English">
+            </div>
+
+            <div class="col-md-6 shadow px-2 py-2">
+                <label for="disability" class="form-label"><b>Do you have any physical disabillities ?</b></label><br>
+                <small>(State Yes/No)</small>
+                <br>
+                    <input type="text" class="form-control w-50" id="disability">
+            </div>
+
+            <div class="col-md-6 shadow px-2 py-2">
+                <label for="physical-challenge" class="form-label"><b>(If yes, describe and if no, write NO)</b></label>
+                    <input  type="text" class="form-control" id="physical-challenge">
+                    </label>
+            </div>
+           
+            <!-- <div class="col-4 mx-auto text-center">
+                <button type="submit"   class="btn btn-success mx-auto">Next</button>
+              </div> -->
+        </form>
+        <div class="col-4 mx-auto text-center">
+            <button type="submit" onclick="nextPage()"  class="btn btn-success mx-auto">Next</button>
+          </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+</body>
+</html>
+
+<script src="requirement.js"></script>
